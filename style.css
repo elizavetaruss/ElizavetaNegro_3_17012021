@@ -275,4 +275,43 @@ p {
 .footer--element {
   margin: 10px 0px 10px 20PX;
 }
+
+.container_menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1FR;
+      grid-template-columns: 1FR;
+  -ms-grid-rows: 1fr 1Fr 1fr 1FR 1F;
+      grid-template-rows: 1fr 1Fr 1fr 1FR 1F;
+  height: 400px;
+  background-color: white;
+}
+
+.titre_menu {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
+  z-index: 2;
+  background-color: #f4f4f4;
+  border-radius: 35PX 35PX 0px 0PX;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image_menu {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-image: url(images/menilmontant.jpg);
+  background-size: cover;
+}
 /*# sourceMappingURL=style.css.map */
