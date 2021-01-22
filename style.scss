@@ -16,6 +16,12 @@ p{
 	font-size: 1.1rem;
 }
 
+header{
+padding-left: 20px;
+padding-right: 20px;
+background-color: white;
+}
+
 .accueil{
 	@include flexCenter;
 	padding: 20px;
@@ -24,10 +30,12 @@ p{
 .header--icon{
 	float: left;
 	margin-top: 7PX;
+	padding: 10px 0px 10px 0px;
 }
 
 .header--logo{
 	@include flexCenter;
+	padding: 10px 0px 10px 0px;
 	}		
 
 .localisation{
@@ -191,16 +199,27 @@ padding-top: 20px;
 	background-color: #f4f4f4;
 	border-radius: 35PX 35PX 0px 0PX;
 	display: flex;
-		}
+	}
+	
 	.image_menu{
-		grid-column: 1/2;
-		grid-row-start:1;
-		grid-row-end:5;
-		z-index: 1;
-		background-repeat: no-repeat;
+		@include image;
 		background-image: url(images/menilmontant.jpg);
-		background-size:cover;
-			}
+	}
+
+	.image_menu_2{
+		@include image;
+		background-image: url(images/charonne.jpg);
+	}
+
+	.image_menu_3{
+		@include image;
+		background-image: url(images/citerouge.jpg);
+	}
+
+	.image_menu_4{
+		@include image;
+		background-image: url(images/folie_mericourt.jpg);
+	}
 	
 	.menu_restaurant{
 		display: flex;
