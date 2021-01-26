@@ -17,6 +17,7 @@ p {
   font-size: 1.1rem;
 }
 
+/* HEADER */
 header {
   padding-left: 20px;
   padding-right: 20px;
@@ -34,6 +35,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
+}
+
+@media screen and (min-width: 1100px) {
+  .accueil {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .header--icon {
@@ -55,6 +64,7 @@ header {
   padding: 10px 0px 10px 0px;
 }
 
+/* LOCALISATION */
 .localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,6 +82,18 @@ header {
           box-shadow: inset 0px 4px 9px -8px rgba(0, 0, 0, 0.55);
 }
 
+@media screen and (min-width: 1100px) {
+  .localisation {
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+}
+
+/* INTRO */
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,10 +185,16 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30PX 15px 30Px 15px;
+  padding: 25PX 15px 25Px 15px;
   border-radius: 25PX;
   -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+  background-color: #f4f4f4;
+  font-size: 1.2rem;
+}
+
+.fas {
+  padding-right: 15px;
 }
 
 .fonctionnement-nm {
@@ -186,6 +214,17 @@ header {
   background: #9356DC;
 }
 
+@media screen and (min-width: 1100px) {
+  .fonctionnement {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 40px;
+  }
+}
+
+/* MENUS RESTAURANTS */
 .menu_titre {
   width: 100%;
   background: #f4F4F4;
@@ -206,6 +245,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #f4F4F4;
+  padding-bottom: 40px;
 }
 
 .menu--block {
@@ -254,6 +295,35 @@ header {
   right: 1%;
 }
 
+@media screen and (min-width: 600px) {
+  .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu--block {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .menu--block {
+    width: 20%;
+  }
+  h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* FOOTER */
 .footer {
   background-color: #303030;
   padding-bottom: 20Px;
@@ -284,6 +354,21 @@ header {
   margin: 10px 0px 10px 20PX;
 }
 
+@media screen and (min-width: 1100px) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer--logo {
+    width: 60%;
+  }
+}
+
+/* MENU PAGES */
 .body_page_menu {
   background-color: #f4f4f4;
   width: 100%;
@@ -430,7 +515,48 @@ header {
   margin-top: 3px;
 }
 
+.button_container {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
 span {
   display: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .menu_restaurant {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu_restaurant_block {
+    width: 30%;
+  }
+  .titre_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
