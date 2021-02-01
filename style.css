@@ -222,7 +222,8 @@ header {
   border-radius: 50%;
   color: white;
   background: #9356DC;
-  z-index: 1;
+  margin: -10PX;
+  z-index: 2;
 }
 
 @media screen and (min-width: 1100px) {
