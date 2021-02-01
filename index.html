@@ -9,15 +9,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/e484c71781.js" crossorigin="anonymous"></script>
     </head>
-
-    <!--HEADER-->
-
-    <header class="accueil">
-        <img class="logo" src="images/ohmyfood.svg" alt="logo_ohmyfood">
-    </header>
-    
-     
+ 
     <body>
+
+        <div class="loading"></div>
+
+        <div id="wrapper">
+    
+             <!--HEADER-->
+        <header class="accueil">
+            <img class="logo" src="images/ohmyfood.svg" alt="logo_ohmyfood">
+        </header>
 
          <!--RECHERCHE-->
 
@@ -40,11 +42,11 @@
             <h2> Fonctionnement </h2>
                 <div class="fonctionnement">
                     <div class="fonctionnement-element">
-                        <div class="fonctionnement-nm">1</div>
                         <div class="fonctionnement--btn">
                             <i class="fas fa-mobile-alt"></i>
                             Choisissez un restaurant
                         </div>
+                        <div class="fonctionnement-nm">1</div>
                     </div>
                     
                     <div class="fonctionnement-element">
@@ -78,7 +80,10 @@
                     <div class="menu--blocktext">
                         <h5 class="">La palette de goût</h5>
                         <p class="">Ménilmontant</p>
-                        <div class="menu_icon"><i class="far fa-heart"></i></div>
+                        <div class="menu_icon">
+                            <i class="far fa-heart heart-main"></i>
+                            <i class="fas fa-heart heart-background"></i>
+                        </div>
                     </div> 
                     </a>    
                 </div>
@@ -89,7 +94,10 @@
                     <div class="menu--blocktext">
                         <h5 class="">La note enchantée</h5>
                         <p class="">Charonne</p>
-                        <div class="menu_icon"><i class="far fa-heart"></i></div>
+                        <div class="menu_icon">
+                            <i class="far fa-heart heart-main"></i>
+                            <i class="fas fa-heart heart-background"></i>
+                        </div>
                     </div>
                     </a>
                 </div>
@@ -100,7 +108,10 @@
                     <div class="menu--blocktext">
                         <h5 class="">A la française</h5>
                         <p class="">Cité Rouge</p>
-                        <div class="menu_icon"><i class="far fa-heart"></i></div>
+                        <div class="menu_icon">
+                            <i class="far fa-heart heart-main"></i>
+                            <i class="fas fa-heart heart-background"></i>
+                        </div>
                     </div>
                     </a>
                 </div>
@@ -111,13 +122,18 @@
                     <div class="menu--blocktext">
                         <h5 class="">La délice des sens</h5>
                         <p class="">Folie-Méricourt</p>
-                        <div class="menu_icon"><i class="far fa-heart"></i></div>
+                        <div class="menu_icon">
+                            <i class="far fa-heart heart-main"></i>
+                            <i class="fas fa-heart heart-background"></i>
+                        </div>
                     </div>
                     </a>
                 </div>
             </div>
         </div>
     </section>
+
+    </body>
 
         <!--FOOTER-->
 
@@ -142,5 +158,5 @@
             </div>
         </div>
     </footer>
-    </body>
+</div>
 </html>

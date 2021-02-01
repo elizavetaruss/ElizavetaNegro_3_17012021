@@ -18,6 +18,14 @@ padding: 15px 20px 15px 20px;
 	color: white;
 	margin: 15px 0px 15px 0px;
 	border-radius: 25px;
+	transition: all 450ms;
+	&:hover {
+        transform: scale(1.05);
+        background: #FF79DA;
+		background: -moz-linear-gradient(top, #FF79DA 0%,#FF79DA 30%,#9a6dd1 100%);
+		background: -webkit-linear-gradient(top, #FF79DA 0%,#FF79DA 30%, #9a6dd1 100%);
+		background: linear-gradient(top, #FF79DA 0%,#FF79DA 30%, #9a6dd1 100%);
+    }
 }
 
 @mixin image{

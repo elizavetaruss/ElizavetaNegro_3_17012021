@@ -103,7 +103,10 @@ background-color: white;
 	width: 90%;
 	margin: 10Px;
 	}	
-
+	
+.fas{
+		padding-right: 15px;
+	}
 
 .fonctionnement--btn{
 	width: 85%;
@@ -113,12 +116,9 @@ background-color: white;
 	padding: 25PX 15px 25Px 15px;
 	border-radius: 25PX;
 	box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.20);
-	background-color: #f4f4f4;
+	background-color: hsl(0, 0%, 96%);
 	font-size: 1.2rem;
-}
 
-.fas{
-	padding-right: 15px;
 }
 
 .fonctionnement-nm{
@@ -130,6 +130,8 @@ background-color: white;
 	border-radius: 50%;
 	color: white;
 	background: $primary-color;
+	z-index: 1;
+
 }
 
 @media screen and (min-width:1100px){
@@ -163,6 +165,9 @@ background-color: white;
 		border-radius: 15px;
 		margin: 15Px;
 		box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.20);
+		&:hover {
+			box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.30);
+		}
 	}
 
 	.btn_menu{
@@ -406,3 +411,83 @@ span{
 		animation-fill-mode: both;
 		animation-delay: 1S;
 		}
+
+
+		.heart-main{
+			position: relative;
+			font-size: 1;
+			}
+		
+		.heart-background{
+			position: absolute;
+			left: 0;
+			right: 0;
+			color:transparent;
+			}
+		
+			.heart-background:hover{
+				animation: fillin 1S ease-in-out forwards;
+				}
+		
+		@keyframes fillin {
+			0%{
+			color: transparent;
+				}
+		
+			30%{
+				color: transparent;
+				transform: scale(1.2);
+					}
+			60%{
+				color:$primary-color;
+				transform: scale(1.3);
+			}
+			90%{
+				transform: scale(1.2);
+			}
+			100%{
+				color: $primary-color;
+				transform: scale(1.2);
+			}
+		}
+
+		.loading {
+			position: fixed;
+			left: 50%;
+			top: 30%;
+			margin-left: -4em;
+			border: 20px solid transparent;
+			border-top: 20px solid #9356DC;
+			border-bottom: 20px solid #9356DC;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			z-index: -1;
+			animation: loading 2S ease-in-out infinite;
+		  }
+		
+		  @keyframes loading{
+			0% {
+			  transform: rotate(0deg);
+			}
+			50% {opacity: 1;
+			}
+			100% {
+			  transform: rotate(360deg);
+			  opacity: 0;
+			}
+		}
+			#wrapper {
+				background-color: white;
+				animation: opacity 2S;
+			  }
+
+			@keyframes opacity {
+				0% {opacity: 0;
+				}
+				50% {opacity: 0;
+				}
+				100% { opacity: 1;
+				}
+			  }
+	
