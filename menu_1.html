@@ -5,11 +5,14 @@
 	    <meta charset="utf-8" />
         <meta name="viewport"  content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Oh My Food - La Palette du goût</title>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/e484c71781.js" crossorigin="anonymous"></script>
     </head>
 
     <!--HEADER-->
-
+    <body class="body_page_menu">
     <header>
         <div class="header--icon">
             <a href="index.html"><i class="fas fa-arrow-left arrow"></i></a>
@@ -20,9 +23,11 @@
     </header>
 
 
-    <body class="body_page_menu">
+    
         <div class="container_menu">
-            <div class=titre_menu><h2>La palette du goût</h2></div>
+            <div class=titre_menu>
+                <h2 class="titre_name">La palette du goût</h2>
+            </div>
             <div class=image_menu></div>
         </div>
         <div class="menu_restaurant">
@@ -33,7 +38,7 @@
                         <h5>Fricassée d'escargot</h5>
                         <div class="text_price">
                             <p>Au piment d'Espelette</p>
-                            <p><strong>25€</strong></p>
+                            <p class="validation_price"><strong>25€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -43,10 +48,10 @@
                     </div>
 
                     <div class="menu_plat">
-                        <h5>Foie gras de canard mi-cuit</h5>
+                        <h5 class="validation_text">Foie gras de canard mi-cuit</h5>
                         <div class="text_price">
-                            <p>Et ses copeaux de truffe noire</p>
-                            <p><strong>35€</strong></p>
+                            <p class="validation_text">Et ses copeaux de truffe noire</p>
+                            <p class="validation_price"><strong>35€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -57,8 +62,8 @@
                     <div class="menu_plat">
                         <h5>Oeuf au Plat</h5>
                         <div class="text_price">
-                            <p>Assaisonné à la truffe sur lit de caviar</p>
-                            <p><strong>20€</strong></p>
+                            <p class="validation_text">Assaisonné à la truffe sur lit de caviar</p>
+                            <p class="validation_price"><strong>20€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -72,8 +77,8 @@
                     <div class="menu_plat">
                         <h5>Filet de boeuf aux herbes</h5>
                         <div class="text_price">
-                            <p>Accompagné de sa ribambelle de légumes</p>
-                            <p><strong>40€</strong></p>
+                            <p class="validation_text">Accompagné de sa ribambelle de légumes</p>
+                            <p class="validation_price"><strong>40€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -82,10 +87,10 @@
                         </div>
                     </div>
                     <div class="menu_plat">
-                        <h5>Parmentier de queue de boeuf</h5>
+                        <h5 class="validation_text">Parmentier de queue de boeuf</h5>
                         <div class="text_price">
-                            <p>A la truffe noire sur sa purée de panais</p>
-                            <p><strong>35€</strong></p>
+                            <p class="validation_text">A la truffe noire sur sa purée de panais</p>
+                            <p class="validation_price"><strong>35€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -96,8 +101,8 @@
                     <div class="menu_plat">
                         <h5>Filet de turbot</h5>
                         <div class="text_price">
-                            <p>Aux agrumes</p>
-                            <p><strong>44€</strong></p>
+                            <p class="validation_text">Aux agrumes</p>
+                            <p class="validation_price"><strong>44€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -111,8 +116,8 @@
                     <div class="menu_plat">
                         <h5>Paris-Brest</h5>
                         <div class="text_price">
-                            <p>Revisité</p>
-                            <p><strong>18€</strong></p>
+                            <p class="validation_text">Revisité</p>
+                            <p class="validation_price"><strong>18€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -121,10 +126,10 @@
                         </div>
                     </div>
                     <div class="menu_plat">
-                        <h5>Macaron au chocolat d'exception</h5>
+                        <h5 class="validation_text">Macaron au chocolat d'exception</h5>
                         <div class="text_price">
-                            <p>Et glace à la vanille de Madagascar</p>
-                            <p><strong>22€</strong></p>
+                            <p class="validation_text">Et glace à la vanille de Madagascar</p>
+                            <p class="validation_price"><strong>22€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -133,10 +138,10 @@
                         </div>
                     </div>
                     <div class="menu_plat">
-                        <h5>Mousse au chocolat</h5>
+                        <h5 class="validation_text">Mousse au chocolat</h5>
                         <div class="text_price">
-                        <p>Au piment d'Espelette et à la truffe noire</p>
-                        <p><strong>23€</strong></p>
+                        <p class="validation_text"> Au piment d'Espelette et à la truffe noire</p>
+                        <p class="validation_price"><strong>23€</strong></p>
                         </div>
                         <div class="validation">
                             <div class="validation_check">
@@ -152,7 +157,6 @@
     </div>   
     </div>
     
-    </body>
         <!--FOOTER-->
 
         <footer>
@@ -172,7 +176,7 @@
                     <a href="">Mention légales</a>
                 </div>
                 <div class="footer--element">
-                    <a href="">Contact</a>
+                    <a href="mailto:name@ohmyfood.fr">Contact</a>
                 </div>
             </div>
         </footer>

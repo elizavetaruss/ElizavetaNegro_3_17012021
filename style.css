@@ -10,11 +10,11 @@ h2 {
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: .8rem;
 }
 
 /* HEADER */
@@ -183,7 +183,7 @@ header {
   margin: 10Px;
 }
 
-.fas {
+.fonctionnement--btn .fas {
   padding-right: 15px;
 }
 
@@ -209,6 +209,7 @@ header {
 
 .fonctionnement--btn:hover {
   background-color: rgba(147, 86, 220, 0.2);
+  cursor: pointer;
 }
 
 .fonctionnement-nm {
@@ -269,7 +270,7 @@ header {
   position: relative;
   background: white;
   width: 90%;
-  height: 280px;
+  height: 230px;
   border-radius: 15px;
   margin: 15Px;
   -webkit-box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
@@ -419,6 +420,22 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20Px 30px 20px 30px;
+}
+
+.titre_name {
+  font-family: 'Shrikhand', cursive;
+  margin: 0;
 }
 
 .image_menu {
@@ -530,51 +547,6 @@ header {
   overflow: hidden;
 }
 
-.validation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 25%;
-  height: 100%;
-  background: #99E2D0;
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
-}
-
-.validation_check {
-  color: white;
-  font-size: 2rem;
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
-  -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
-}
-
-.menu_plat:hover .validation {
-  -webkit-transform: translateX(-90%);
-          transform: translateX(-90%);
-}
-
-.menu_plat:hover .validation > .validation_check {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
 .text_price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,6 +560,70 @@ header {
           flex-direction: row;
   color: #474747;
   margin-top: 3px;
+}
+
+.validation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 70px;
+  height: 100%;
+  background: #99E2D0;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.validation_check {
+  color: white;
+  font-size: 2rem;
+}
+
+.validation_text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.validation_price {
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.menu_plat:hover .validation {
+  -webkit-transform: translateX(-90%);
+          transform: translateX(-90%);
+}
+
+.menu_plat:hover .validation_text {
+  width: 60%;
+}
+
+.menu_plat:hover .validation_price {
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
+
+.menu_plat:hover .fa-check-circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: .7s;
+  transition: .7s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .button_container {
@@ -629,6 +665,9 @@ header {
         -ms-flex-align: center;
             align-items: center;
   }
+  .menu_plat:hover .validation_text {
+    width: 100%;
+  }
 }
 
 @-webkit-keyframes opacity {
@@ -654,7 +693,6 @@ header {
           animation: opacity 2S forwards;
 }
 
-/* ANIMATIONS*/
 @-webkit-keyframes moveup {
   0% {
     opacity: 0;
@@ -667,6 +705,7 @@ header {
     opacity: 1;
   }
 }
+
 @keyframes moveup {
   0% {
     opacity: 0;
