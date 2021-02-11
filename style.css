@@ -441,6 +441,13 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20Px 30px 20px 30px;
+  position: relative;
+}
+
+.menu_icon2 {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 5%;
 }
 
 .titre_name {
